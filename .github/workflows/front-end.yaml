@@ -1,14 +1,24 @@
+<<<<<<< HEAD
 name: Deploy to S3
+=======
+name: Upload Website
+>>>>>>> 7b265a7f7336d483c99091cc68d7a010d4eae85d
 
 on:
+  workflow_dispatch:
   push:
     branches:
+<<<<<<< HEAD
       - main  
+=======
+    - main
+
+>>>>>>> 7b265a7f7336d483c99091cc68d7a010d4eae85d
 jobs:
   deploy:
     runs-on: ubuntu-latest
-
     steps:
+<<<<<<< HEAD
     - name: Checkout repository
       uses: actions/checkout@v2
 
@@ -20,3 +30,15 @@ jobs:
         aws-region: us-east-1  
     - name: Sync to S3
       run: aws s3 sync .\Week 2\ s3://diperesume-bucket 
+=======
+    - uses: actions/checkout@master
+    - uses: jakejarvis/s3-sync-action@master
+      with:
+        args: --acl private --follow-symlinks --delete
+      env:
+        AWS_S3_BUCKET: ${{ secrets.AWS_S3_BUCKET }}
+        AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+        AWS_REGION: 'us-east-1'
+        SOURCE_DIR: 'Week 2'
+>>>>>>> 7b265a7f7336d483c99091cc68d7a010d4eae85d

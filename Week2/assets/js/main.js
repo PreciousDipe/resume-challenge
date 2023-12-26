@@ -256,7 +256,7 @@
 const counter = document.querySelector('.counter');
 async function getCounter() {
   try {
-    let response = await fetch("https://epwov2sxin2sb2eyw7d3azcgxm0vnjoe.lambda-url.us-east-1.on.aws/");
+    let response = await fetch("https://gly71a7xgk.execute-api.us-east-1.amazonaws.com");
     let data = await response.json();
 
     // Assuming the JSON response has a "views" property

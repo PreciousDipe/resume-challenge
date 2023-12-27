@@ -259,8 +259,6 @@ async function getCounter() {
   try {
     let response = await fetch("https://gly71a7xgk.execute-api.us-east-1.amazonaws.com/getvisitor");
     let data = await response.json();
-
-    // Assuming the JSON response has a "views" property
     let views = data.views;
     counter.innerHTML = ` Views: ${views}`;
   } catch (error) {

@@ -254,6 +254,7 @@
 
 //javascript code
 const counter = document.querySelector('.counter');
+
 async function getCounter() {
   try {
     let response = await fetch("https://gly71a7xgk.execute-api.us-east-1.amazonaws.com/getvisitor");

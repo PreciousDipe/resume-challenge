@@ -1,1 +1,1 @@
-![cloud resume drawio (1)](https://github.com/PreciousDipe/resume-challenge/assets/45766007/02ee05b2-010e-4ea6-92e2-f6fd99a3c4a8)
+![cloud resume drawio (2)](https://github.com/PreciousDipe/resume-challenge/assets/45766007/d0ea0e45-393d-4937-af5e-797a1aaa3e24)

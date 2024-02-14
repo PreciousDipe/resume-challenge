@@ -1,5 +1,5 @@
 resource "aws_s3_bucket" "example" {
-  bucket = "cloudresumechallenge-bucket"
+  bucket = "cloudresumechallenge-bucket1"
 
   tags = {
     Name        = "My bucket"

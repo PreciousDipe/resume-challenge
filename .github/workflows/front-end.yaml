@@ -20,7 +20,7 @@ jobs:
 
     - name: Install npm dependencies
       run: npm install
-      working-directory: ./Week2  
+      working-directory: .  
 
     - name: Set up AWS CLI
       uses: aws-actions/configure-aws-credentials@v2

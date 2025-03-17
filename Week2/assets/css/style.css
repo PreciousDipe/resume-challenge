@@ -150,6 +150,29 @@ h6 {
   }
 }
 
+/* Download Button */
+.download-button {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #18d26e;
+  color: white;
+  text-decoration: none;
+  border-radius: 7px;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.download-button:hover {
+  background-color: #003d82;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+.download-button:active {
+  transform: translateY(1px);
+}
+
 /* Header Top */
 #header.header-top {
   height: 80px;

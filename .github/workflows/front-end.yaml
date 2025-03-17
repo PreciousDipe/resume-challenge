@@ -19,7 +19,8 @@ jobs:
         node-version: '14'
 
     - name: Install npm dependencies
-      run: npm install  
+      run: npm install
+      working-directory: ./Week2  
 
     - name: Set up AWS CLI
       uses: aws-actions/configure-aws-credentials@v2
@@ -29,4 +30,4 @@ jobs:
         aws-region: us-east-1  
 
     - name: Sync to S3
-      run: aws s3 sync s3://diperesume-bucket
+      run: aws s3 sync ./Week2/ s3://diperesume-bucket/Week2/

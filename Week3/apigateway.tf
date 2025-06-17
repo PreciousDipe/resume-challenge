@@ -12,7 +12,6 @@ resource "aws_apigatewayv2_api" "count-api" {
 resource "aws_apigatewayv2_integration" "count-api" {
   api_id           = aws_apigatewayv2_api.count-api.id
   integration_type = "AWS_PROXY"
-
   connection_type    = "INTERNET"
   description        = "Lambda example"
   integration_method = "POST"
